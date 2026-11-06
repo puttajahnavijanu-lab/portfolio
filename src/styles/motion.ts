@@ -1,4 +1,4 @@
-// Shared Motion Design Tokens & Architecture for S. Jagadeshwar Reddy Portfolio
+// Shared Motion Design Tokens & Architecture for P. Jahnavi Portfolio
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 

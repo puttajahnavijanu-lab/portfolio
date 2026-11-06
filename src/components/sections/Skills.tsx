@@ -15,13 +15,17 @@ export const Skills: React.FC = () => {
 
   const getCategoryIcon = (category: string) => {
     switch (category) {
+      case 'Languages & Web':
       case 'Programming Languages':
         return <Terminal className="w-5 h-5 text-[#00D2FF]" />;
+      case 'Frontend':
       case 'Frontend Development':
         return <Layers className="w-5 h-5 text-[#00D2FF]" />;
+      case 'Backend & Data':
       case 'Backend & Databases':
         return <Database className="w-5 h-5 text-[#00D2FF]" />;
       case 'Tools & Platforms':
+      case 'Tools':
         return <Wrench className="w-5 h-5 text-[#00D2FF]" />;
       case 'AI & Innovation Workflows':
         return <Cpu className="w-5 h-5 text-[#00D2FF]" />;

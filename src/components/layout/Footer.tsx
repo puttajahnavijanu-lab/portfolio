@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
         {/* Left Monogram and Name */}
         <div className="flex items-center gap-3">
           <div className="w-8 h-8 rounded-lg bg-[#0A0A0A] border border-white/10 flex items-center justify-center font-heading font-black text-sm text-[#00D9FF] shadow-[0_0_10px_rgba(0,217,255,0.2)]">
-            JR
+            PJ
           </div>
           <span className="h-4 w-px bg-white/10" />
           <div className="text-xs">
@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
 
         {/* Center Copyright & Verification */}
         <div className="text-xs text-center text-[#666666]">
-          © {CURRENT_YEAR} S. Jagadeshwar Reddy. Crafted with precision, React, TypeScript, GSAP & Three.js.
+          © {CURRENT_YEAR} P. Jahnavi. Crafted with precision, React, TypeScript, GSAP & Three.js.
         </div>
 
         {/* Right Socials & Scroll to Top */}
@@ -47,17 +47,19 @@ export const Footer: React.FC = () => {
             <GithubIcon className="w-4 h-4" />
           </MagneticButton>
 
-          <MagneticButton
-            as="a"
-            href={PERSONAL_INFO.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn profile"
-            className="p-2 rounded-lg bg-[#0A0A0A] border border-white/10 hover:bg-[#141414] hover:text-[#00D9FF] text-[#A1A1AA] transition-colors"
-            strength={0.2}
-          >
-            <LinkedinIcon className="w-4 h-4" />
-          </MagneticButton>
+          {PERSONAL_INFO.linkedin && (
+            <MagneticButton
+              as="a"
+              href={PERSONAL_INFO.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
+              className="p-2 rounded-lg bg-[#0A0A0A] border border-white/10 hover:bg-[#141414] hover:text-[#00D9FF] text-[#A1A1AA] transition-colors"
+              strength={0.2}
+            >
+              <LinkedinIcon className="w-4 h-4" />
+            </MagneticButton>
+          )}
 
           <MagneticButton
             as="a"

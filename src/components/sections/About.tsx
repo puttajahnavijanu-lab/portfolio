@@ -163,11 +163,11 @@ export const About: React.FC = () => {
               <div className="relative w-full" data-cursor-text="ABOUT">
                 {/* Subtle architectural frame */}
                 <div className="absolute inset-0 bg-[#121316] rounded-2xl transform -rotate-2 border border-[#262626] -z-10" />
-                <div className="relative rounded-2xl overflow-hidden bg-[#0E0F12] border border-[#262626] shadow-[0_20px_50px_rgba(0,0,0,0.6)] p-4">
+                <div className="relative rounded-2xl overflow-hidden bg-[#0E0F12] border border-[#262626] shadow-[0_20px_50px_rgba(0,0,0,0.6)] p-3 sm:p-4">
                   <img
-                    src="/assets/portraits/supporting/portrait_standing_cutout.png"
-                    alt="S. Jagadeshwar Reddy"
-                    className="w-full h-auto object-contain filter contrast-[1.05]"
+                    src="/assets/portraits/supporting/jahnavi_standing_portrait.jpg"
+                    alt="P. Jahnavi — Full Stack Developer"
+                    className="w-full h-auto object-cover rounded-xl filter contrast-[1.02]"
                     loading="lazy"
                   />
                 </div>

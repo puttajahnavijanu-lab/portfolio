@@ -11,7 +11,6 @@ import { About } from './components/sections/About';
 import { Skills } from './components/sections/Skills';
 import { Experience } from './components/sections/Experience';
 import { Education } from './components/sections/Education';
-import { Certifications } from './components/sections/Certifications';
 import { Contact } from './components/sections/Contact';
 import { Footer } from './components/layout/Footer';
 
@@ -23,7 +22,7 @@ export const App: React.FC = () => {
   useEffect(() => {
     // Active section detection during scroll
     const handleScroll = () => {
-      const sections = ['home', 'projects', 'about', 'skills', 'experience', 'education', 'certifications', 'contact'];
+      const sections = ['home', 'projects', 'about', 'skills', 'experience', 'education', 'contact'];
       const scrollPosition = window.scrollY + 220;
 
       for (const section of sections) {
@@ -95,10 +94,7 @@ export const App: React.FC = () => {
         {/* 07: Academic Education Milestones */}
         <Education />
 
-        {/* 08: Verified Certifications Gallery */}
-        <Certifications />
-
-        {/* 09: Collaboration & Contact Form */}
+        {/* 08: Collaboration & Contact Form */}
         <Contact />
       </main>
 

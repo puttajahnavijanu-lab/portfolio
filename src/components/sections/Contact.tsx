@@ -5,7 +5,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import { PERSONAL_INFO } from '../../data/portfolioData';
-import { GithubIcon, LinkedinIcon } from '../icons/SocialIcons';
+import { GithubIcon } from '../icons/SocialIcons';
 import { prefersReducedMotion } from '../../styles/motion';
 import { MaskedTextReveal } from '../ui/MaskedTextReveal';
 import { MagneticButton } from '../ui/MagneticButton';
@@ -174,17 +174,20 @@ export const Contact: React.FC = () => {
                   </div>
                 </a>
 
-                <div className="flex items-center gap-4 p-3 rounded-xl">
-                  <div className="w-10 h-10 rounded-lg bg-[#16171B] border border-[#262626] flex items-center justify-center shrink-0 text-[#00D2FF]">
+                <a
+                  href={`tel:${PERSONAL_INFO.phone.replace(/\s+/g, '')}`}
+                  className="flex items-center gap-4 p-3 rounded-xl hover:bg-[#16171B] transition-colors group"
+                >
+                  <div className="w-10 h-10 rounded-lg bg-[#16171B] border border-[#262626] flex items-center justify-center shrink-0 group-hover:bg-[#00D2FF] group-hover:text-[#080808] transition-colors text-[#00D2FF]">
                     <Phone className="w-4 h-4" />
                   </div>
                   <div>
                     <div className="text-xs text-[#8E94A0]">Phone & WhatsApp</div>
-                    <div className="text-sm font-semibold text-[#F2F0ED]">
+                    <div className="text-sm font-semibold text-[#F2F0ED] group-hover:underline">
                       {PERSONAL_INFO.phone}
                     </div>
                   </div>
-                </div>
+                </a>
 
                 <div className="flex items-center gap-4 p-3 rounded-xl">
                   <div className="w-10 h-10 rounded-lg bg-[#16171B] border border-[#262626] flex items-center justify-center shrink-0 text-[#00D2FF]">
@@ -205,20 +208,10 @@ export const Contact: React.FC = () => {
                   href={PERSONAL_INFO.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg border border-[#262626] bg-[#16171B] hover:bg-white hover:text-black hover:border-white transition-all text-xs font-semibold text-[#F2F0ED]"
+                  className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg border border-[#262626] bg-[#16171B] hover:bg-white hover:text-black hover:border-white transition-all text-xs font-semibold text-[#F2F0ED]"
                 >
                   <GithubIcon className="w-4 h-4" />
-                  <span>GitHub</span>
-                </a>
-
-                <a
-                  href={PERSONAL_INFO.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg border border-[#262626] bg-[#16171B] hover:bg-[#00D2FF] hover:text-[#080808] hover:border-[#00D2FF] transition-all text-xs font-semibold text-[#F2F0ED]"
-                >
-                  <LinkedinIcon className="w-4 h-4" />
-                  <span>LinkedIn</span>
+                  <span>GitHub Profile</span>
                 </a>
               </div>
             </div>
@@ -227,16 +220,16 @@ export const Contact: React.FC = () => {
             <div className="bg-[#101114] rounded-card p-6 border border-[#262626] shadow-xs flex items-center justify-between">
               <div>
                 <h4 className="font-heading font-bold text-base text-[#F2F0ED]">
-                  Verified Two-Page ATS Resume
+                  P. Jahnavi — ATS Resume
                 </h4>
                 <p className="text-xs text-[#8E94A0] mt-0.5">
-                  Updated October 2026 • PDF & DOCX Available
+                  Verified Format • PDF Available
                 </p>
               </div>
 
               <a
                 href={PERSONAL_INFO.resumePdf}
-                download="S_Jagadeshwar_Reddy_Resume.pdf"
+                download="P_Jahnavi_Resume.pdf"
                 className="inline-flex items-center gap-2 px-4 py-2 bg-[#00D2FF] text-[#080808] text-xs font-bold rounded-full hover:bg-white transition-all shadow-xs"
               >
                 <Download className="w-3.5 h-3.5" />
@@ -253,7 +246,7 @@ export const Contact: React.FC = () => {
                 Send a Direct Message
               </h3>
               <p className="text-xs sm:text-sm text-[#8E94A0] mb-8">
-                Your message is formatted and delivered straight to Jagadeshwar's verified inbox.
+                Your message is formatted and delivered straight to Jahnavi's verified inbox.
               </p>
 
               {status === 'success' ? (

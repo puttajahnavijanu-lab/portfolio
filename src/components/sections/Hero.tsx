@@ -181,8 +181,8 @@ export const Hero: React.FC = () => {
       <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none select-none z-0 flex items-center justify-center lg:justify-end lg:pr-[2vw] xl:pr-[5vw] 2xl:pr-[7vw]">
         <img
           ref={imageRef}
-          src="/assets/portraits/hero/hero_cinematic_portrait.jpg"
-          alt="S. Jagadeshwar Reddy — Full Stack Developer & AI Enthusiast"
+          src="/assets/portraits/hero/jahnavi_hero_seated.jpg"
+          alt="P. Jahnavi — Full Stack Developer & AI Enthusiast"
           className="h-[76vh] sm:h-[80vh] lg:h-[84vh] xl:h-[86vh] 2xl:h-[88vh] max-h-[780px] w-auto max-w-full lg:max-w-none object-contain will-change-transform"
           loading="eager"
           fetchPriority="high"
@@ -215,13 +215,13 @@ export const Hero: React.FC = () => {
           <div className="hero-eyebrow inline-flex items-center gap-2.5 mb-3 sm:mb-4">
             <span className="w-2 h-2 rounded-full bg-[#00D9FF] shadow-[0_0_12px_#00D9FF] animate-pulse" />
             <span className="text-[10px] sm:text-[11.5px] font-mono font-bold uppercase tracking-[0.24em] text-[#00D9FF]">
-              BUILDING IDEAS FOR A SMARTER TOMORROW
+              {PERSONAL_INFO.headlineEyebrow}
             </span>
           </div>
 
           {/* Primary Name Display with Sagfeild Font & Complete Descender Clearance */}
           <h1 className="hero-name-title font-heading font-black text-4xl sm:text-5xl md:text-6xl lg:text-[60px] xl:text-[68px] tracking-tight text-[#F5F5F5] leading-[1.12] pb-3 mb-1 overflow-visible">
-            S. Jagadeshwar Reddy
+            {PERSONAL_INFO.fullName}
           </h1>
 
           {/* Role Subtitle with Electric Cyan Highlight */}
@@ -235,7 +235,7 @@ export const Hero: React.FC = () => {
 
           {/* Bio Description in Glyko Sans */}
           <p className="hero-bio-text text-[14px] sm:text-[15.5px] text-[#A1A1AA] max-w-[490px] leading-relaxed mb-6 sm:mb-8 font-normal drop-shadow-sm">
-            I build modern web applications and AI-driven solutions that solve real-world problems. Passionate about technology, meaningful impact, and continuous learning.
+            {PERSONAL_INFO.heroBio}
           </p>
 
           {/* Action CTA Buttons with Magnetic Physics Attraction */}
@@ -259,7 +259,7 @@ export const Hero: React.FC = () => {
             <MagneticButton
               as="a"
               href={PERSONAL_INFO.resumePdf}
-              download="S_Jagadeshwar_Reddy_Resume.pdf"
+              download="P_Jahnavi_Resume.pdf"
               className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 bg-[#0A0A0A]/85 hover:bg-[#141414] backdrop-blur-md text-[#F5F5F5] text-xs sm:text-sm font-semibold rounded-full border border-white/10 hover:border-white/25 transition-all shadow-[0_4px_20px_rgba(0,0,0,0.4)] cursor-pointer group"
               data-cursor-text="RESUME"
               strength={0.2}
@@ -273,10 +273,10 @@ export const Hero: React.FC = () => {
           <div className="hero-metrics-bar pt-5 border-t border-white/[0.08] flex flex-wrap items-center gap-6 sm:gap-8">
             <div>
               <div className="font-heading font-black text-2xl sm:text-3xl text-[#F5F5F5] leading-none">
-                05
+                02
               </div>
               <div className="text-[10.5px] text-[#929292] font-mono uppercase tracking-wider mt-1">
-                Projects
+                Featured Projects
               </div>
             </div>
 
@@ -284,10 +284,10 @@ export const Hero: React.FC = () => {
 
             <div>
               <div className="font-heading font-black text-2xl sm:text-3xl text-[#F5F5F5] leading-none">
-                30+
+                03
               </div>
               <div className="text-[10.5px] text-[#929292] font-mono uppercase tracking-wider mt-1">
-                Core Skills
+                Work Experiences
               </div>
             </div>
 
@@ -295,10 +295,10 @@ export const Hero: React.FC = () => {
 
             <div>
               <div className="font-heading font-black text-2xl sm:text-3xl text-[#F5F5F5] leading-none">
-                12
+                8.20
               </div>
               <div className="text-[10.5px] text-[#929292] font-mono uppercase tracking-wider mt-1">
-                Certifications
+                B.Tech CGPA
               </div>
             </div>
 

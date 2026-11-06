@@ -32,7 +32,6 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
     { name: 'Skills', id: 'skills' },
     { name: 'Experience', id: 'experience' },
     { name: 'Education', id: 'education' },
-    { name: 'Certifications', id: 'certifications' },
     { name: 'Contact', id: 'contact' },
   ];
 
@@ -77,22 +76,22 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
     >
       <div className="max-w-[1440px] mx-auto px-5 sm:px-8 flex items-center justify-between">
         
-        {/* Left Monogram: JR with Subtle Electric Cyan Accent */}
+        {/* Left Monogram: PJ with Subtle Electric Cyan Accent */}
         <a
           href="#home"
           onClick={(e) => handleNavClick(e, 'home')}
           className="flex items-center gap-2.5 group focus:outline-none shrink-0"
-          aria-label="S. Jagadeshwar Reddy Home"
+          aria-label="P. Jahnavi Home"
           data-cursor-text="HOME"
         >
           <div className="relative flex items-center justify-center w-8 h-8 rounded-lg bg-[#0A0A0A] border border-white/10 text-[#F5F5F5] shadow-xs group-hover:border-[#00D9FF]/40 transition-all">
             <span className="font-heading font-black text-sm tracking-tighter">
-              JR
+              PJ
             </span>
             <span className="absolute -top-0.5 -right-0.5 w-1.5 h-1.5 rounded-full bg-[#00D9FF] shadow-[0_0_8px_#00D9FF] animate-pulse" />
           </div>
           <span className="hidden sm:inline-block font-heading font-bold text-sm tracking-tight text-[#F5F5F5] group-hover:text-white transition-colors">
-            Jagadeshwar
+            Jahnavi
           </span>
         </a>
 

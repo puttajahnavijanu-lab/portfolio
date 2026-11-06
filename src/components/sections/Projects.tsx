@@ -30,76 +30,19 @@ interface ZigZagProject {
 
 const FEATURED_PROJECTS: ZigZagProject[] = [
   {
-    id: "drug-scope-ai",
-    number: "01",
-    title: "Drug Scope AI",
-    eyebrow: "AI & BIOCHEMICAL RESEARCH",
-    category: "Scientific Intelligence",
-    liveUrl: "https://drugs-scope-ai.vercel.app/",
-    githubUrl: "https://github.com/Jagadesh7575/Drugs-Scope-Ai",
-    tags: ["AI/ML", "Healthcare", "3D Ligands", "Bio-Research", "Supabase"],
-    description: "AI-powered drug discovery and molecular research platform for precision biochemical analysis and automated clinical review dossiers.",
-    fullDescription: "An AI-oriented biomedical research platform featuring medicine search, drug-drug interaction detection, 3D molecular structure visualization, and automated scientific evidence review dossiers.",
-    highlights: [
-      "Drug-drug interaction matrix & 3D ligand structural rendering",
-      "Automated biomedical research dossiers & clinical evidence extraction"
-    ],
-    previewImage: "/assets/projects/drug_scope_cinematic.jpg",
-    accentColor: "#10B981", // Agricultural / Bio emerald green
-    accentGlow: "rgba(16, 185, 129, 0.28)"
-  },
-  {
-    id: "roadrisk-ai",
-    number: "02",
-    title: "RoadRisk AI",
-    eyebrow: "COMPUTER VISION & TRANSIT SAFETY",
-    category: "Intelligent Transportation",
-    liveUrl: "https://roadrisk-ai.vercel.app/",
-    githubUrl: "https://github.com/Jagadesh7575/roadrisk-ai",
-    tags: ["Computer Vision", "Deep Learning", "Traffic Safety", "Geospatial Alerts"],
-    description: "Real-time AI roadway risk detection system for accident mitigation, dangerous zone detection, and predictive route safety analysis.",
-    fullDescription: "Intelligent road risk assessment and accident-zone analysis system with interactive geospatial basemaps, hazard identification, and live transit safety alerts.",
-    highlights: [
-      "Live geospatial risk mapping with interactive hazard telemetry",
-      "Predictive accident zone analytics & automated route safety alerts"
-    ],
-    previewImage: "/assets/projects/roadrisk_cinematic.jpg",
-    accentColor: "#3B82F6", // Deep navy / technical cobalt
-    accentGlow: "rgba(59, 130, 246, 0.28)"
-  },
-  {
-    id: "orvix",
-    number: "03",
-    title: "ORVIX",
-    eyebrow: "ENTERPRISE REAL-TIME COMMUNICATIONS",
-    category: "Enterprise Intelligence",
-    liveUrl: "https://nanii-orvix.vercel.app/",
-    githubUrl: "https://github.com/Jagadesh7575/orvix",
-    tags: ["Real-Time Chat", "Supabase", "End-to-End Encrypted", "Full Stack"],
-    description: "Private real-time messaging platform with end-to-end security, instant presence detection, typing indicators, and Supabase integration.",
-    fullDescription: "Real-time private communication and analytical workflow platform featuring encrypted messaging channels, unread indicators, authentication, and Supabase integration.",
-    highlights: [
-      "End-to-end encrypted messaging channels with typing telemetry",
-      "Supabase row-level security & instant presence synchronization"
-    ],
-    previewImage: "/assets/projects/orvix_cinematic.jpg",
-    accentColor: "#8B5CF6", // Electric violet / royal purple
-    accentGlow: "rgba(139, 92, 246, 0.28)"
-  },
-  {
     id: "solara",
-    number: "04",
+    number: "01",
     title: "SOLARA",
     eyebrow: "SOLAR WEARABLE & IOT HARDWARE",
     category: "Solar Technology & Hardware",
     liveUrl: "https://nanii-solara.vercel.app/",
-    githubUrl: "https://github.com/Jagadesh7575/solara",
-    tags: ["Wearable Tech", "Solar Energy", "Smart Charging", "IoT Analytics"],
-    description: "Intelligent solar-powered smartwatch platform with real-time solar harvesting telemetry, battery preservation, and conversion models.",
+    githubUrl: "https://github.com/puttajahnavijanu-lab",
+    tags: ["React.js", "Tailwind CSS", "Wearable Tech", "Solar Energy"],
+    description: "Designed a responsive wearable-technology showcase highlighting solar-charging hardware, battery-optimization metrics, and product features.",
     fullDescription: "High-end product showcase for solar-powered wearable technology, featuring dynamic battery optimization analytics, telemetry views, and solar charging efficiency models.",
     highlights: [
       "Solar harvesting telemetry with real-time conversion models",
-      "Dynamic battery preservation & ambient environmental sensors"
+      "Dynamic battery preservation & responsive ambient telemetry preview"
     ],
     previewImage: "/assets/projects/solara_cinematic.jpg",
     accentColor: "#F59E0B", // Solar gold / amber
@@ -107,22 +50,22 @@ const FEATURED_PROJECTS: ZigZagProject[] = [
   },
   {
     id: "heliowatch",
-    number: "05",
+    number: "02",
     title: "HelioWatch",
-    eyebrow: "SOLAR-POWERED SMARTWATCH COMMERCE",
+    eyebrow: "SMARTWATCH COMMERCE SHOWCASE",
     category: "Sustainable Luxury Wearables",
     liveUrl: "https://nanii-heliowatch.vercel.app/",
-    githubUrl: "https://github.com/Jagadesh7575/heliowatch",
-    tags: ["Smart Wearables", "Solar Tech", "Luxury UX", "E-Commerce"],
-    description: "Premium solar-powered smartwatch experience engineered with sustainable luxury design, hardware comparisons, and smart telemetry.",
+    githubUrl: "https://github.com/puttajahnavijanu-lab",
+    tags: ["React.js", "TypeScript", "E-Commerce", "Responsive UI"],
+    description: "Built a modern smartwatch showcase with dynamic product specifications, pricing tiers, and mobile-first shopping interactions.",
     fullDescription: "E-commerce and interactive showcase for advanced smartwatches, blending technical telemetry with fluid shopping workflows, specifications comparison, and responsive design.",
     highlights: [
-      "Fluid luxury commerce interface with interactive solar telemetry preview",
-      "Comprehensive hardware comparisons & frictionless responsive checkout"
+      "Modern smartwatch showcase with dynamic product specifications",
+      "Responsive pricing tiers & mobile-first shopping interactions"
     ],
     previewImage: "/assets/projects/heliowatch_cinematic.jpg",
-    accentColor: "#F97316", // Coral / amber orange
-    accentGlow: "rgba(249, 115, 22, 0.28)"
+    accentColor: "#00D9FF", // Cyan / blue accent
+    accentGlow: "rgba(0, 217, 255, 0.28)"
   }
 ];
 
@@ -232,7 +175,7 @@ export const Projects: React.FC = () => {
           </div>
 
           <p className="projects-header-item text-xs sm:text-sm text-[#929292] max-w-md leading-relaxed font-normal">
-            Hand-crafted full-stack architectures, biomedical AI systems, and real-time distributed platforms engineered with precision.
+            Hand-crafted responsive web applications, interactive product showcases, and front-end engineering with modern frameworks.
           </p>
         </div>
 
